@@ -227,19 +227,19 @@ function isYoutube(str) {
     const embed = new Discord.RichEmbed()
      .setColor("RANDOM")
      .addField(`**__أوامر البوت__**`,`
-.    **${prefix}play
+       **${prefix}play**
    امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
-       ${prefix}stop
+       **${prefix}stop**
         ايقاف الاغنية 
-       ${prefix}skip
+       **${prefix}skip**
      امر تخطي الاغنية
-       ${prefix}vol
+       **${prefix}vol**
     تغير مستوى الصوت 1 - 100
-       ${prefix}pause
+       **${prefix}pause**
       ايقاف الاغنية مؤقتا 
-       ${prefix}resume
+       **${prefix}resume**
        امر تكملة الاغنية
-       ${prefix}move
+       **${prefix}move**
    سحب البوت او ادخال البوت الى روم
    
      prefix = ${prefix}
