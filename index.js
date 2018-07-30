@@ -223,39 +223,39 @@ function isYoutube(str) {
     return str.toLowerCase().indexOf('youtube.com') > -1;
 }
  client.on('message', message => {
-     if (message.content === prefix +"مساعfffffgfsvbadfgqegavzxfawfdafgsbaghhhhhhhhhhaerfgدة") {
+     if (message.content === prefix +"help") {
     const embed = new Discord.RichEmbed()
      .setColor("RANDOM")
      .addField(`**__أوامر البوت__**`,`
-.    **${prefix}play**
-     عشان يدخل البوت الروم
-     **${prefix}شغل**
-     امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
-     **${prefix}تخطي**
-     تغير الأغنية
-     **${prefix}وقف**
-     ايقاف الأغنية
-     **${prefix}كمل**
-     مواصلة الأغنية
-     **${prefix}صوت**
-     مستوى الصوت 1-100
-     **${prefix}اطلع**
-     خروج البوت من الروم
-
-
+.    **${prefix}play
+   امر تشغيل الأغنية , !شغل الرابط او اسم الأعنية
+       ${prefix}stop
+        ايقاف الاغنية 
+       ${prefix}skip
+     امر تخطي الاغنية
+       ${prefix}vol
+    تغير مستوى الصوت 1 - 100
+       ${prefix}pause
+      ايقاف الاغنية مؤقتا 
+       ${prefix}resume
+       امر تكملة الاغنية
+       ${prefix}move
+   سحب البوت او ادخال البوت الى روم
+   
      prefix = ${prefix}
-     ping = ${Date.now() - message.createdTimestamp}ms   `)
+     ping = ${Date.now() - message.createdTimestamp}`)
 
       message.channel.send({embed});
      }
     });
+	
 
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "327042370644213761","324672376455299074") return;
+  if (message.author.id !== "327042370644213761") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
